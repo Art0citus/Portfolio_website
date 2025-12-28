@@ -11,8 +11,8 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
   "React",
-  "Next.js",
-  "TypeScript",
+  "Flutter",
+  "JavaScript",
   "Node.js",
   "GraphQL",
   "PostgreSQL",
@@ -20,14 +20,10 @@ const skills = [
   "Redis",
   "Docker",
   "AWS",
-  "Vercel",
+  "ExpressJs",
   "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "Python",
   "Git",
-  "GitHub Actions",
 ];
 
 export const Hero = () => {
@@ -92,13 +88,13 @@ I design and build robust, performant web applications built to scale.
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Resume
-              </AnimatedBorderButton>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+  <AnimatedBorderButton>
+    <Download className="w-5 h-5" />
+    Resume
+  </AnimatedBorderButton>
+</a>
+
             </div>
 
             {/* Social Links */}
@@ -147,9 +143,9 @@ I design and build robust, performant web applications built to scale.
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">Stay</div>
+                  <div className="text-2xl font-bold text-primary">Consistency</div>
                   <div className="text-xs text-muted-foreground">
-                    Hard
+                    is key
                   </div>
                 </div>
               </div>

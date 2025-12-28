@@ -2,40 +2,36 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Arto Bot",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+      "This project demonstrates how to build an AI-powered search assistant that delivers concise, conversational answers with a clean UI and a scalable backend.",
+    image: "/Projects/project1.png",
+    tags: ["Flutter", "Python", "FastAPI", "Gemini API"],
+    github: "https://github.com/Art0citus/Arto_Bot",
   },
   {
-    title: "E-Commerce Platform",
+    title: "AI-Image-Classifier",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
-    image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+      "A portfolio-grade image classification webapp allows users to upload an image and receive the top-3 predictions with confidence scores in real time.",
+    image: "/Projects/project2.png",
+    tags: ["MobileNetV2 model", "Tensorflow", "StreamLit", "Python"],
+    github: "https://github.com/Art0citus/AI-Image-classification",
   },
   {
-    title: "AI Writing Assistant",
+    title: "LazyText",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-    image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+      "Extensible real-time chat application built with Node.js (Express + Socket.IO) for the backend and React for the frontend.",
+    image: "/Projects/project3.png",
+    tags: ["React", "Nodejs", "JavaScript", "WebSockets"],
+    github: "https://github.com/Art0citus/LazyText",
   },
   {
-    title: "Project Management Tool",
+    title: "Url-Shortner",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-    image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+      "A simple URL Shortener application built using JavaScript.This project is created as a learning exercise to understand backend concepts like request handling, routing, and basic data storage.",
+    image: "/Projects/project4.png",
+    tags: ["JavaScript", "Express.js", "Nodejs", "Redis"],
+    github: "https://github.com/Art0citus/URL-Shortner",
   },
 ];
 
@@ -87,12 +83,6 @@ export const Projects = () => {
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
-                    href={project.link}
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
-                    <ArrowUpRight className="w-5 h-5" />
-                  </a>
-                  <a
                     href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
@@ -107,12 +97,6 @@ export const Projects = () => {
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight
-                    className="w-5 h-5 
-                  text-muted-foreground group-hover:text-primary
-                   group-hover:translate-x-1 
-                   group-hover:-translate-y-1 transition-all"
-                  />
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
@@ -134,10 +118,17 @@ export const Projects = () => {
 
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
-            <ArrowUpRight className="w-5 h-5" />
-          </AnimatedBorderButton>
+         <a
+  href="https://github.com/Art0citus"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <AnimatedBorderButton>
+    View All Projects
+    <ArrowUpRight className="w-5 h-5" />
+  </AnimatedBorderButton>
+</a>
+
         </div>
       </div>
     </section>
