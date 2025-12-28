@@ -21,9 +21,10 @@ export const Terminal = () => {
   const inputRef = useRef(null);
 
   // autofocus
-  useEffect(() => {
-    inputRef.current?.focus();
-  }, []);
+ const focusInput = () => {
+  inputRef.current?.focus();
+};
+
 
   const runCommand = (command) => {
     const cmd = command.trim().toLowerCase();
